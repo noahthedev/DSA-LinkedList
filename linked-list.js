@@ -1,3 +1,10 @@
+class _Node {
+  constructor(value, next) {
+      this.value = value;
+      this.next = next;
+  }
+}
+
 class LinkedList {
   constructor() {
     this.head = null;
@@ -59,3 +66,16 @@ class LinkedList {
     previousNode.next = currNode.next;
   }
 }
+
+function main() {
+  const SLL = new LinkedList
+  SLL.insertFirst('Apollo')
+  SLL.insertFirst('Boomer')
+  SLL.insertFirst('Helo')
+  SLL.insertFirst('Husker')
+  SLL.insertFirst('Starbuck')
+  
+  console.log(SLL)
+}
+
+console.log(main())
